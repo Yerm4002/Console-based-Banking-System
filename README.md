@@ -36,8 +36,6 @@ The goal of this project is to learn the fundamentals of programming by developi
 - **Withdraw Money**
 - **Transfer Funds**
 - **View Transaction History**
-- **View transaction history from a JSON file**
-
 
 ## Usage
 The application will prompt the user to choose one of the following options by entering the corresponding number:
@@ -47,5 +45,14 @@ The application will prompt the user to choose one of the following options by e
 4. **Transfer Funds**: Enter the account ID, the amount to transfer, and the target account ID.
 5. **View Transaction History**: Enter the account ID to view a list of transactions from the JSON file.
 
+
 ## Configuration
 All data, including user names, IDs, and transactions, are stored in a single **JSON file** for simplicity and easy management. This file is read and written by the application during the runtime.
+
+## Error Handling
+Application involves simple error-handling mechanisms. Examples of error handling include:
+- **Invalid Choice Number**: If user chose non-existent option (e.g. User enters 6 when there are 5 options) application will prompt the user to enter the right input
+- **Invalid ID**: If user enters wrong account ID, the application will display an error message and prompt the user to enter a valid account ID. User will have 3 chances to enter the right ID.
+- **Insufficient Balance**: If a user tries to withdraw or transfer more funds than are available, the system will alert the user and block the transaction.
+
+
