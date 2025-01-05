@@ -44,7 +44,7 @@ class BankSystem:
                 if not self.checkNameExists(name):
                     p1 = BankAccount(id, name,pin)
                     self.accounts.append(p1)
-                    self.SaveAccToJson()
+                    self.saveAccToJson()
                     print("Account successfully created! ")
                     print(f"Your account ID is: {id}")
                     input("Press any key to continue...")
@@ -75,7 +75,7 @@ class BankSystem:
         pin=self.checkPin(someAccount.accountId)
         if pin:
             someAccount.deposit(amount)
-            self.SaveAccToJson()
+            self.saveAccToJson()
             self.saveTransaction(someAccount.accountId, amount, "Deposit")
             print("Funds deposited successfully")
             print(f"Account balance: {someAccount.accountBalance} KM")
@@ -105,7 +105,7 @@ class BankSystem:
         pin = self.checkPin(someAccount.accountId)
         if pin:
             someAccount.withdraw(amount)
-            self.SaveAccToJson()
+            self.saveAccToJson()
             self.saveTransaction(someAccount.accountId, amount, "Withdrawal")
             print("Funds withdrawn successfully")
             print(f"Account balance: {someAccount.accountBalance} KM")
@@ -147,10 +147,10 @@ class BankSystem:
         pin=self.checkPin(someAccount.accountId)
         if pin:
             someAccount.withdraw(amount)
-            self.SaveAccToJson()
+            self.saveAccToJson()
             self.saveTransaction(someAccount.accountId, amount, "Transfer out")
             otherAccount.deposit(amount)
-            self.SaveAccToJson()
+            self.saveAccToJson()
             self.saveTransaction(otherAccount.accountId, amount, "Transfer in")
             print("Transfer successful")
             input("Press any key to continue...")
@@ -237,7 +237,7 @@ class BankSystem:
             print(f"An error occurred: {e}")
             input("Press any key to continue...")
     #Json file methods
-    def SaveAccToJson(self):
+    def saveAccToJson(self):
         try:
             with open("accounts.json", "w") as f:
                 accounts_data = [
@@ -322,7 +322,6 @@ class BankSystem:
                 return True
     def findAcc(self,someId):
         try:
-            #someId = int(someId)
             for x in self.accounts:
                 if x.accountId==int(someId):
                     return x
@@ -404,7 +403,6 @@ class BankSystem:
 ABCPattern= r'^[a-zA-Z\s]+$'
 IDPattern= r'^\d+$'
 amountPattern= r'^\d+(\.\d+)?$'
-
 
 #main program
 
