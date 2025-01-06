@@ -1,18 +1,21 @@
-# Console-based Banking System
+# Console-Based Banking System
 
 ## Description
-The Console-based Banking System is a command-line application that allows users to create accounts, deposit and withdraw money, transfer funds, and view their transaction history to manage their finances. It is built as a simplified simulation of core banking functions, implemented in **C#**, **Python**, and **JavaScript**. This project is a great starting point for those looking to learn fundamental programming concepts, including syntax, object-oriented programming (OOP), and an introduction to database management.
+The **Console-Based Banking System** is a command-line application designed to help users manage their finances. It allows them to create accounts, deposit and withdraw money, transfer funds, and view their transaction history. This project simulates core banking functions in a simplified manner, and is implemented in three programming languages: **C#**, **Python**, and **JavaScript**. It serves as an excellent introduction to programming concepts such as **syntax**, **object-oriented programming (OOP)**, and **data storage management**.
 
 ## Project Goals
-The goal of this project is to learn the fundamentals of programming by developing a simple simulation of a banking system. The project focuses on understanding basic programming syntax, OOP concepts, and working with data storage in three different languages.
+The primary goal of this project is to familiarize developers with basic programming concepts by creating a simplified banking system. The focus is on:
+- Basic programming syntax
+- Object-oriented programming (OOP) principles
+- Data management using simple file storage (JSON)
 
 ## Technologies Used
 - **C#** with **.NET Core** (IDE: Microsoft Visual Studio)
-- **Python**  (IDE: PyCharm)
-- **JavaScript** with **Node.js** (IDE: VS Code)
-
+- **Python** (IDE: PyCharm)
+- **JavaScript** with **Node.js** (IDE: Visual Studio Code)
 
 ## Installation
+
 1. **Download the project files** from GitHub.
 2. **Ensure you have the correct IDE** for the programming language:
    - For C#, use **Microsoft Visual Studio**.
@@ -22,37 +25,38 @@ The goal of this project is to learn the fundamentals of programming by developi
    - **C#**: Install the **.NET SDK**.
    - **Python**: Install **Python 3.x**.
    - **JavaScript**: Install **Node.js**.
-4. **Run the application** 
-   - using the IDE or the terminal:
-   - If you use the terminal 
-      - Specify the directory of the script you stored in your device then enter the following:
-         - For C#: `dotnet run`
-         - For Python: `python <BankingSystem>.py`
-         - For JavaScript: `node <BankingSystem>.js`
+4. **Run the application** using the IDE or terminal:
+   - For C#: `dotnet run`
+   - For Python: `python (name_of_the_project).py`
+   - For JavaScript: `node (name_of_the_project).js`
 
 ## Features
-- **Create a Bank Account**
-- **Deposit Money**
-- **Withdraw Money**
-- **Transfer Funds**
-- **View Transaction History**
+
+- **Create a Bank Account**: Allow users to set up a new bank account by entering their details and generating a personal PIN.
+- **Deposit Money**: Users can deposit funds into their account by providing their account ID, PIN, and the deposit amount.
+- **Withdraw Money**: Allows users to withdraw funds, with validation for sufficient balance.
+- **Transfer Funds**: Transfer funds between accounts, ensuring the correct ID, PIN, and amount are provided.
+- **View Transaction History**: View a list of past transactions stored in the JSON file.
+- **View Account Information**: Users can check their account details such as balance, ID, and a graphical representation of income vs. expenses (displayed as a bar chart).
 
 ## Usage
-The application will prompt the user to choose one of the following options by entering the corresponding number:
-1. **Create an Account**: Enter the name and ID for the new account.
-2. **Deposit Money**: Enter the account ID and the amount to deposit.
-3. **Withdraw Money**: Enter the account ID and the amount to withdraw.
-4. **Transfer Funds**: Enter the account ID, the amount to transfer, and the target account ID.
-5. **View Transaction History**: Enter the account ID to view a list of transactions from the JSON file.
+When the application starts, users are prompted to select an option by entering the corresponding number:
 
+1. **Create an Account**: Enter your name and generate a unique PIN.
+2. **Deposit Money**: Provide your account ID, PIN, and the amount to deposit.
+3. **Withdraw Money**: Provide your account ID, PIN, and the amount to withdraw.
+4. **Transfer Funds**: Specify your account ID, PIN, transfer amount, and the recipient’s account ID.
+5. **View Transaction History**: Enter your account ID and PIN to view your transaction history.
+6. **View Account Settings**: Check your account details, including balance and a graphical report.
 
 ## Configuration
-All data, including user names, IDs, and transactions, are stored in a single **JSON file** for simplicity and easy management. This file is read and written by the application during the runtime.
+All data is stored in two **JSON files** for simplicity:
+- One file for account data
+- One file for transaction records
+These files are read and written to by the application during runtime.
 
 ## Error Handling
-Application involves simple error-handling mechanisms. Examples of error handling include:
-- **Invalid Choice Number**: If user chose non-existent option (e.g. User enters 6 when there are 5 options) application will prompt the user to enter the right input
-- **Invalid ID**: If user enters wrong account ID, the application will display an error message and prompt the user to enter a valid account ID. User will have 3 chances to enter the right ID.
-- **Insufficient Balance**: If a user tries to withdraw or transfer more funds than are available, the system will alert the user and block the transaction.
-
-
+The application includes basic error-handling mechanisms:
+- **Invalid Option**: If a user selects a non-existent option, the system will prompt them to enter a valid choice.
+- **Invalid Account ID**: Users will have 3 chances to enter the correct account ID; otherwise, they will be asked to try again.
+- **Insufficient Funds**: The system will prevent transactions that exceed the available balance and alert the user accordingly.
