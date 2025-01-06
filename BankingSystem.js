@@ -171,7 +171,7 @@ class BankingSystem {
 
   createAccount(name, pin) {
     try {
-      const id = Math.floor(1000000 + Math.random() * 9000000);
+      const id = Math.floor(1000 + Math.random() * 9000);
 
       if (this.isIdTaken(id)) {
         this.createAccount(name, pin);
