@@ -1,9 +1,115 @@
 [
   {
-    "Id": 0,
-    "Type": "Deposit",
-    "Amount": 2000,
-    "Date": "12/29/2024 12:08:40 AM",
-    "Description": "Deposited 2000 KM"
+    "id": 1033099,
+    "name": "Ibrahim Custovic",
+    "amount": 2000,
+    "type": "Deposit"
+  },
+  {
+    "id": 1033099,
+    "name": "Ibrahim Custovic",
+    "amount": 100,
+    "type": "Withdrawal"
   }
-]
+]{
+  "id": 9910430,
+  "name": "Ibrahim Custovic",
+  "amount": 1000,
+  "type": "Deposit"
+}
+{
+  "id": 9910430,
+  "name": "Ibrahim Custovic",
+  "amount": 450,
+  "type": "Withdrawal"
+}
+{
+  "id": 9308663,
+  "name": "Merima Prcanovic",
+  "amount": 20000,
+  "type": "Deposit"
+}
+{
+  "id": 9308663,
+  "name": "Merima Prcanovic",
+  "amount": 18000,
+  "type": "Transfer"
+}
+{
+  "id": 4374455,
+  "name": "Edina Peco",
+  "amount": 2000,
+  "type": "Deposit"
+}
+{
+  "id": 4374455,
+  "name": "Edina Peco",
+  "amount": 700,
+  "type": "Transfer"
+}
+{
+  "id": 2936429,
+  "name": "Emir Dreznjak",
+  "amount": 1200,
+  "type": "Deposit"
+}
+{
+  "id": 2936429,
+  "name": "Emir Dreznjak",
+  "amount": 300,
+  "type": "Transfer"
+}
+{
+  "id": 7898514,
+  "name": "Amina Helja",
+  "amount": 2100,
+  "type": "Deposit"
+}
+{
+  "id": 7898514,
+  "name": "Amina Helja",
+  "amount": 2100,
+  "type": "Deposit"
+}
+{
+  "id": 7898514,
+  "name": "Amina Helja",
+  "amount": 1900,
+  "type": "Withdrawal"
+}
+{
+  "id": 8537410,
+  "name": "Ilma Mujala",
+  "amount": 20100,
+  "type": "Deposit"
+}
+{
+  "id": 8537410,
+  "name": "Ilma Mujala",
+  "amount": 3200,
+  "type": "Transfer"
+}
+{
+  "id": 8652979,
+  "name": "Halima Baralija",
+  "amount": 1200,
+  "type": "Deposit"
+}
+{
+  "id": 8652979,
+  "name": "Halima Baralija",
+  "amount": 1200,
+  "type": "Withdrawal"
+}
+{
+  "id": 8652979,
+  "name": "Halima Baralija",
+  "amount": 3210,
+  "type": "Deposit"
+}
+{
+  "id": 8652979,
+  "name": "Halima Baralija",
+  "amount": 1200,
+  "type": "Transfer"
+}
