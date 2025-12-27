@@ -1,0 +1,122 @@
+.meals-page {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.meals-hero {
+  background: #fff;
+  border-radius: 32px;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  box-shadow: 0 35px 70px rgba(5, 53, 108, 0.08);
+}
+
+.meals-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  margin: 0 0 1rem;
+}
+
+.meals-hero p {
+  color: var(--slate);
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.hero-actions button {
+  border: none;
+  border-radius: 12px;
+  padding: 0.9rem 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero-actions button:first-child {
+  background: var(--sky-blue);
+  color: #fff;
+}
+
+.hero-actions .ghost {
+  background: rgba(2, 126, 252, 0.1);
+  color: var(--sky-blue);
+}
+
+.hero-photo {
+  min-height: 280px;
+  border-radius: 24px;
+  background-image: linear-gradient(
+      rgba(4, 30, 66, 0.4),
+      rgba(4, 30, 66, 0.6)
+    ),
+    url('https://restoran.ba/wp-content/uploads/2024/08/njamnjam_0000_Layer-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.meal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.75rem;
+}
+
+.meal-card {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 25px 50px rgba(7, 46, 98, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.meal-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.meal-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.meal-body h3 {
+  margin: 0;
+}
+
+.meal-body p {
+  margin: 0;
+  color: var(--slate);
+}
+
+.meal-body ul {
+  margin: 0;
+  padding-left: 1rem;
+  color: var(--slate);
+}
+
+.meal-body button {
+  align-self: flex-start;
+  border: none;
+  border-radius: 12px;
+  background: var(--sky-blue);
+  color: #fff;
+  padding: 0.6rem 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .hero-actions {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,43 @@
+:root {
+  --sky-blue: #027efc;
+  --sky-blue-dark: #004fbb;
+  --navy: #062d66;
+  --slate: #5c6f94;
+  --card-border: #d7e0ef;
+  --background: #f5f7fb;
+  --text: #1a1f36;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Manrope', 'Segoe UI', sans-serif;
+  color: var(--text);
+  background-color: var(--background);
+}
+
+main {
+  padding: 0 5vw 4rem;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-family: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

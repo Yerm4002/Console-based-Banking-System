@@ -1,0 +1,80 @@
+.site-footer {
+  background: linear-gradient(135deg, #032048, #041b38);
+  color: #fff;
+  margin-top: auto;
+  padding: 3rem 5vw 2rem;
+}
+
+.footer-brand {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+}
+
+.footer-grid h4 {
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.newsletter p {
+  margin-bottom: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-form input {
+  flex: 1;
+  border-radius: 12px;
+  border: none;
+  padding: 0.75rem 1rem;
+}
+
+.newsletter-form button {
+  border: none;
+  border-radius: 12px;
+  background: var(--sky-blue);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+}
+
+.footer-bar {
+  margin-top: 2.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}

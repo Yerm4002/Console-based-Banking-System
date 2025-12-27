@@ -1,0 +1,128 @@
+.hero {
+  margin-top: 2rem;
+  padding: 3rem;
+  border-radius: 24px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  box-shadow: 0 35px 70px rgba(5, 46, 105, 0.08);
+}
+
+.hero-text .crumbs {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--slate);
+  margin-bottom: 0.5rem;
+}
+
+.hero-text h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0 0 1rem;
+  color: var(--text);
+}
+
+.hero-text h1 span {
+  color: var(--sky-blue);
+}
+
+.hero-text .lead {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--slate);
+  margin-bottom: 1.5rem;
+}
+
+.hero-cta {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.hero-cta button {
+  border: none;
+  border-radius: 12px;
+  background: var(--sky-blue);
+  color: #fff;
+  padding: 0.85rem 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 15px 25px rgba(2, 126, 252, 0.35);
+}
+
+.qr-block {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--slate);
+  font-weight: 600;
+}
+
+.qr-placeholder {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  border: 3px dashed var(--sky-blue);
+}
+
+.hero-card {
+  background: linear-gradient(160deg, var(--sky-blue), var(--sky-blue-dark));
+  border-radius: 28px;
+  padding: 2rem;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-top {
+  margin-bottom: 2rem;
+}
+
+.card-label {
+  opacity: 0.8;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  max-width: 14rem;
+}
+
+.device-mock {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 1rem;
+  backdrop-filter: blur(6px);
+}
+
+.status-bar {
+  width: 60%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 999px;
+  margin: 0 auto 1rem;
+}
+
+.screen {
+  background: #fff;
+  border-radius: 18px;
+  padding: 1.5rem;
+  color: var(--text);
+  min-height: 180px;
+}
+
+.screen p:first-of-type {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.ticket {
+  background: var(--background);
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: inset 0 0 0 1px var(--card-border);
+}

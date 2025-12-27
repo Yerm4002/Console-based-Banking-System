@@ -1,0 +1,87 @@
+.faq-section {
+  margin-top: 3rem;
+}
+
+.faq-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 2rem;
+}
+
+.category-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.category-tabs .tab {
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 1rem;
+  background: transparent;
+  text-align: left;
+  font-weight: 600;
+  color: var(--slate);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.category-tabs .tab.active {
+  background: var(--sky-blue);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 15px 30px rgba(2, 126, 252, 0.25);
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.accordion-item {
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  padding: 0.5rem 1.25rem;
+  background: #fff;
+  box-shadow: 0 15px 30px rgba(7, 46, 98, 0.05);
+}
+
+.accordion-item header button {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: var(--text);
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion-item p {
+  margin: 0 0 1rem;
+  color: var(--slate);
+  line-height: 1.6;
+}
+
+.indicator {
+  font-size: 1.5rem;
+  color: var(--sky-blue);
+}
+
+@media (max-width: 900px) {
+  .faq-layout {
+    grid-template-columns: 1fr;
+  }
+  .category-tabs {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+  .category-tabs .tab {
+    flex: 1;
+    white-space: nowrap;
+  }
+}

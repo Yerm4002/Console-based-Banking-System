@@ -1,0 +1,99 @@
+.journey-page {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.journey-hero {
+  background: #fff;
+  border-radius: 32px;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  box-shadow: 0 35px 70px rgba(7, 46, 98, 0.08);
+}
+
+.journey-hero h1 {
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  margin: 0 0 1rem;
+}
+
+.journey-hero p {
+  color: var(--slate);
+  line-height: 1.7;
+}
+
+.journey-hero-image {
+  min-height: 260px;
+  border-radius: 24px;
+  background-image: linear-gradient(
+      rgba(3, 33, 80, 0.3),
+      rgba(3, 33, 80, 0.6)
+    ),
+    url('https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.journey-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.journey-block {
+  background: #fff;
+  border-radius: 30px;
+  padding: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  box-shadow: 0 25px 60px rgba(5, 40, 92, 0.08);
+  align-items: center;
+}
+
+.journey-block.reverse {
+  direction: rtl;
+}
+
+.journey-block.reverse > * {
+  direction: ltr;
+}
+
+.journey-text h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.journey-text p {
+  color: var(--slate);
+  line-height: 1.6;
+}
+
+.journey-text button {
+  margin-top: 1.5rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--sky-blue);
+  color: #fff;
+  padding: 0.9rem 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 15px 30px rgba(2, 126, 252, 0.25);
+}
+
+.journey-image {
+  border-radius: 24px;
+  min-height: 220px;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 640px) {
+  .journey-block,
+  .journey-block.reverse {
+    direction: ltr;
+  }
+}

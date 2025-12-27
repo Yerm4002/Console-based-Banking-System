@@ -1,0 +1,72 @@
+.contact-page {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.contact-hero {
+  background: #fff;
+  border-radius: 32px;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  box-shadow: 0 35px 70px rgba(7, 46, 98, 0.08);
+}
+
+.contact-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 3.6rem);
+  margin-bottom: 1rem;
+}
+
+.contact-email {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+.contact-email a {
+  color: var(--sky-blue);
+  font-size: 1.25rem;
+}
+
+.contact-map {
+  min-height: 280px;
+  border-radius: 24px;
+  background-image: linear-gradient(
+      rgba(3, 33, 80, 0.4),
+      rgba(3, 33, 80, 0.65)
+    ),
+    url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.call-centers h2 {
+  margin-bottom: 1rem;
+}
+
+.center-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.center-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 25px 50px rgba(5, 40, 92, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.center-card a {
+  color: var(--sky-blue);
+  font-weight: 700;
+  text-decoration: none;
+}
